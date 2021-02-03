@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Administracion;
+use App\Http\Controllers\Controladorlibro;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Administracion::class, 'index']) ;
+
+Route::get('libros', [Controladorlibro::class, 'index'] )->name('listadoLibros');
+
