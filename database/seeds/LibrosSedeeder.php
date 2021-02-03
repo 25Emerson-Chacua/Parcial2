@@ -15,7 +15,7 @@ class LibrosSedeeder extends Seeder
         $datos = [
             ['isbn' => '978-987',
             'titulo' => 'El bosque',
-            'precio' => 30.000,
+            'precio' => 80200,
             'stock' => 10,
             'editorial' => '1',
             ],

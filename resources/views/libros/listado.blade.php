@@ -58,7 +58,25 @@
             <td> {{ $c->nombre }} </td>
             <td> {{ $c->precio }} </td>
  
+            @if($c->m==1 || $c->m==5)
+                <td> 
+                
+                <?php 
 
+                $result1 = ($c->precio * 0.05 ); 
+                echo" $result1"; 
+              ?>
+                </td>
+               @else                   
+                <td> 
+                
+                <?php 
+
+                    $result2 = 0; 
+                    echo" $result2"; 
+                    ?>
+                </td>
+             @endif
             
             </tr>
         
