@@ -17,7 +17,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{{ url('/libros') }}">Listado</a>
-                    <a class="dropdown-item" href="">Registro</a>
+                    
                 </div>
             </li>
             
