@@ -10,7 +10,7 @@
                         <!-- Card -->
                         <div class="card text-dark bg-light  mb-3" style="max-width: 28rem;">
                                 <div class="card-header titulo">MISIÓN</div> 
-                                    <img class="rounded-circle" height="240" src="{{ url('imagenes/somos/1.jpg') }}" alt="Card image cap">
+                                    <img class="rounded-circle" height="240" src="{{ url('img/1.jpg') }}" alt="Card image cap">
                                 <div class="card-body">
                                     
                                         Nuestra misión es convertirnos en una cadena de supermercados a nivel nacional al tiempo que ofrecemos un amplio surtido de productos de calidad a unos precios competitivos. 
@@ -24,7 +24,7 @@
                         <!-- Card -->
                         <div class="card text-dark bg-light  mb-3" style="max-width: 28rem;">
                             <div class="card-header titulo" >VISIÓN</div> 
-                            <img class="rounded-circle" height="240" src="{{ url('imagenes/somos/4.jpg') }}" alt="Card image cap">
+                            <img class="rounded-circle" height="240" src="{{ url('img/2.jpg') }}" alt="Card image cap">
 
                             <!-- Card content -->
                             <div class="card-body">
@@ -42,7 +42,7 @@
                         <div class="card text-dark bg-light  mb-3" style="max-width: 28rem;">
                             <div class="card-header titulo" >NUESTROS VALORES</div> 
                             <!-- Card image -->
-                            <img class="rounded-circle" height="240" src="{{ url('imagenes/somos/3.jpg') }}" alt="Card image cap">
+                            <img class="rounded-circle" height="240" src="{{ url('img/3.jpg') }}" alt="Card image cap">
 
                             <!-- Card content -->
                 
@@ -69,4 +69,3 @@
     <a href='{{url()->previous()}}' class="valores" > Regresar </a>
 </div>
 @stop
-
