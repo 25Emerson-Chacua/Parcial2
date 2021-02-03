@@ -2,7 +2,7 @@
 @extends('layout.master')
 
 
-@if(count($libro)==0)
+@if(count($editorial)==0)
 <br><br><br><br><br><br>
 <div class="container" align="center"> 
     <div class="row">
@@ -21,7 +21,7 @@
 <h1> Listado de libros </h1>
 
 <div class="container" >
-
+<a href="{{ route('form_registroEditoriales') }}" class="btn btn-primary" > REGISTAR </a>
     </div>
 
 
@@ -29,36 +29,29 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">ISBN</th>
-            <th scope="col">Titulo </th>
-            <th scope="col">Stock </th>
-            <th scope="col">Estado </th>
-            <th scope="col">Editorial </th>
-            <th scope="col">Precio </th>
-            <th scope="col">Descuento </th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Dirrecion </th>
+            <th scope="col">ciudad </th>
+            <th scope="col">telefono </th>
+            <th scope="col">opcion </th>
+
         </tr>
     </thead>
     <tbody>
-    @foreach($libro as $c)
+    @foreach($editorial as $c)
       
             <tr>
             <td> {{ $c->id }} </td>
-            <td> {{ $c->ISBN }} </td>
-            <td> {{ $c->titulo }} </td>
-            <td> {{ $c->stock }} </td>
-            @if($c->stock==0)
-                <td> agotado </td>
-            @else
-                @if($c->stock<=1 || $c->stock<=10)
-                <td> ultimas undades </td>
-               @else                   
-                <td> Disponisble</td>
-             @endif
-             @endif
             <td> {{ $c->nombre }} </td>
-            <td> {{ $c->precio }} </td>
- 
+            <td> {{ $c->direccion }} </td>
+            <td> {{ $c->telefono }} </td>
+            <td> {{ $c->ciudad }} </td>
+            <td> 
+                <a href="{{route('form_actualizaEditorial', $c->id)}}" class="btn btn-primary" > Actualizar </a>
+              
+            </td>
 
+ 
             
             </tr>
         

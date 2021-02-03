@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/informativo') }}"> Nosotros <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/') }}"> Inicio <span class="sr-only">(current)</span></a>
             </li>
            
 
@@ -26,7 +26,7 @@
                 Categorias
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="">Listado</a>
+                    <a class="dropdown-item" href="{{ url('/editorial') }}">Listado</a>
                     <hr>
                     <a class="dropdown-item" href="">Registro</a>
                 </div>
